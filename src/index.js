@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
 const Button = (props) => {
-  // your code here
+  const { buttonText } = props;
+  return <button>{buttonText}</button>;
 };
 
 const Application = () => {
-
   // your code here
 
   const reset = () => {
@@ -17,7 +17,7 @@ const Application = () => {
 
   return (
     <main>
-      {/* your code here -- this entire line including the curly braces can be removed */}
+      <Button buttonText={"RESET"} />
       <h1>Hello React</h1>
     </main>
   );
