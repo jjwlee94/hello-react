@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 const Button = (props) => {
-  const { buttonText } = props;
-  return <button>{buttonText}</button>;
+  const { buttonText, clickButton } = props;
+
+  return <button onClick={clickButton}>{buttonText}</button>;
 };
 
 const Application = () => {
@@ -17,7 +18,7 @@ const Application = () => {
 
   return (
     <main>
-      <Button buttonText={"RESET"} />
+      <Button buttonText={"RESET"} clickButton={reset} />
       <h1>Hello React</h1>
     </main>
   );
