@@ -9,6 +9,7 @@ const Button = (props) => {
 };
 
 const Application = () => {
+  const [name, setName] = useState("[ your name ]");
   // your code here
 
   const reset = () => {
@@ -19,7 +20,7 @@ const Application = () => {
   return (
     <main>
       <Button buttonText={"RESET"} clickButton={reset} />
-      <h1>Hello React</h1>
+      <h1>Hello {name}</h1>
     </main>
   );
 };
