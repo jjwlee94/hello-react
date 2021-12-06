@@ -23,7 +23,7 @@ const Application = () => {
         placeholder="Type your name"
       />
       <Button buttonText={"RESET"} clickButton={reset} />
-      <h1>Hello {name}</h1>
+      {name && <h1>Hello {name}</h1>}
     </main>
   );
 };
